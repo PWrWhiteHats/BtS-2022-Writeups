@@ -1,0 +1,31 @@
+# Required sections
+name: "Babyste"
+author: "Kuber19"
+category: stegano
+description: |
+    What is that? I think smugglers hid a message here. Of course our analytic can't even write a python script...Could you please help?
+
+    > Remember to submit flag in the correct format `BtSCTF{A-Za-z0-9_}`
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 50
+    minimum: 100
+
+
+image: null
+host: null
+
+# connection_info: nc localhost 1234
+
+
+flags:
+    - {
+        type: "static",
+        content: "BtSCTF{1_4m_th3_l1ngu15t_h3h3}",
+    }
+
+
+# If provided, the field can take one of two values: hidden, visible.
+state: hidden

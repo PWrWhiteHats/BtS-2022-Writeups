@@ -1,0 +1,28 @@
+# Required sections
+name: "Sanity check"
+author: "Arqsz"
+category: misc
+description: Join us on our [Discord server](https://discord.gg/n3gAYuAMnN)!
+value: 100
+type: dynamic
+extra:
+    initial: 100
+    decay: 30
+    minimum: 1
+
+
+image: null
+host: null
+
+# connection_info: http://localhost
+
+
+flags:
+    - {
+        type: "static",
+        content: "BtSCTF{good_luck}",
+    }
+
+
+# If provided, the field can take one of two values: hidden, visible.
+state: hidden

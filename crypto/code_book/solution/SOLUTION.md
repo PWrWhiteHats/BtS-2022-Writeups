@@ -1,0 +1,3 @@
+## Solution
+
+Prepare a script that guesses the flag a single byte at a time. You can do it by preparing the username in such a way, that just a single byte of the flag falls into a previous block. Then you just try every possibility and compare the ciphertext of two blocks: one fully controlled by user and one with a single character from flag.   (I created [solution.py](solution.py) file that does just that.)

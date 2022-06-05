@@ -1,5 +1,7 @@
 # datapack
 
+_Author: rdk31
+
 ## Description
 
 I found this weird minecraft datapack that asks me for a password, can you help me find the right one?

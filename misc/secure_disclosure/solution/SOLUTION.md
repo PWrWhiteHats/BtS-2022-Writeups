@@ -1,7 +1,7 @@
 ## Solution
 
 1. Consider how you can send vulnerability disclosure, where to find e-mail adress dedicated to this? 
-Visit ```security.txt``` file on ```whitehats.pwr.edu.pl/.well-known/security.txt```.
+Visit ```security.txt``` file on ```<domain>/.well-known/security.txt```.
 
 ```
 # Thank you for reaching us!
@@ -10,9 +10,8 @@ Visit ```security.txt``` file on ```whitehats.pwr.edu.pl/.well-known/security.tx
 
 Contact: mailto:kn.whitehats@pwr.edu.pl
 Expires: 2022-07-31T02:55:00.000Z
-Encryption: https://whitehats.pwr.edu.pl/pgp_key.txt
+Encryption: <domain>/pgp_key.txt
 Preferred-Languages: en, pl
-Canonical: https://whitehats.pwr.edu.pl/.well-known/security.txt
 
 # Consider this message before you send to us vulnerability reporting!
 

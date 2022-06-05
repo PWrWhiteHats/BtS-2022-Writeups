@@ -1,0 +1,28 @@
+# Required sections
+name: "shellcode"
+author: "Jakub259"
+category: pwn
+description: What if... you couldn't use syscalls... unless..?
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 50
+    minimum: 100
+
+
+image: null
+host: null
+
+connection_info: nc localhost 1234
+
+
+flags:
+    - {
+        type: "static",
+        content: "BtSCTF{C0D3_r3U5E_4TT4cK5_Ar3_FUN}",
+    }
+
+
+# If provided, the field can take one of two values: hidden, visible.
+state: hidden

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Entity RPG</title>
+  <link th:href="@{/css/bootstrap.css}" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<ul>
+  <li><a href="/">Home</a></li>
+  <li><a href="/play">Play Arena</a></li>
+  <li><a href="/import">Import</a></li>
+  <li><a class="active" href="/export">Export</a>
+  </li>
+</ul>
+<h2 class="coltxt"><center>XML File with Yours character most important data</center></h2>
+<h2 class="coltxt"><center>Copy this data and save it as .xml file</center></h2>
+
+<center><textarea readonly th:text="${xml}" id="xml" cols="100" rows="25">123</textarea></center>
+
+</body>
+</html>

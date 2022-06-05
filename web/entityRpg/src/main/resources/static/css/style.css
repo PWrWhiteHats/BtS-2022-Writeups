@@ -1,0 +1,116 @@
+body {
+    margin: 50px;
+    padding: 100px;
+    background: lightblue url("/images/entityrpg.png") no-repeat fixed center;
+}
+
+.content, div{
+    display:inline-block;
+}
+
+.menu{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    position: center;
+    border: 3px solid #4F4F4F;
+    border-radius: 3px;
+    color: lightblue;
+    text-align-last: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-delete{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    position: center;
+    color: lightblue;
+    text-align-last: center;
+    align-items: center;
+    justify-content: center;
+    top: 80%;
+}
+
+.button-add {
+    position:absolute;
+    bottom:5%;
+    left: 5%;
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    opacity: 0.9;
+    border-radius: 3px;
+}
+
+.button-play {
+    position:absolute;
+    bottom:10%;
+    right: 40%;
+    background-color: #00AA9D;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    opacity: 0.9;
+    border-radius: 3px;
+}
+
+.button-load {
+    position:absolute;
+    bottom:5%;
+    right: 5%;
+    background-color: #04AA9D;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    opacity: 0.9;
+    border-radius: 3px;
+}
+
+.logo {
+    width: 500px;
+    height: 500px;
+    display: block;
+    text-indent: -9999px;
+}
+.form-textfield{ width: 35%; height: 10%; background-color: #ededed; opacity: 0.9; transition: 0.5s;}
+.form-textfield:focus{transition: 0.5s; opacity: 1;}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 88%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #04AA6D;
+}

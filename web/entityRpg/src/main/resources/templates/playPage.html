@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Entity RPG</title>
+  <link th:href="@{/css/game.css}" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<p th:style="'color:#F8F8FF;display: flex;justify-content: center;align-items: center;text-align: center;'" th:text="'Your UUID is: ' + ${character.getUUID()} + ' Please write it down to Load Your character in future.'"></p>
+
+<form th:action="@{/play}" method="get">
+  <br>
+  <input class="button-create" type="submit" value="START PLAYING">
+</form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+# Required sections
+name: "Warmup"
+author: "Kuber19"
+category: re
+description: We are going to participate in great hacking tournament. Everyone needs to be warmed up, it's your turn.
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 50
+    minimum: 100
+
+
+image: null
+host: null
+
+# connection_info: nc localhost 1234
+
+
+flags:
+    - {
+        type: "static",
+        content: "BtSCTF{0k_th4t_w4s_34sy_u_r3_r1ght}",
+    }
+
+
+# If provided, the field can take one of two values: hidden, visible.
+state: hidden

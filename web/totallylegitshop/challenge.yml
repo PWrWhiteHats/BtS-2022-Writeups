@@ -1,0 +1,27 @@
+# Required sections
+name: "Totally legit shop "
+author: "Arqsz"
+category: web
+description: Does it look like a legitimate shop to you? I am wondering what is hidden there...
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 50
+    minimum: 100
+
+
+image: null
+host: null
+
+connection_info: http://localhost
+
+
+flags:
+    - {
+        type: "static",
+        content: "BtSCTF{w0rdpr355_n07_50_53cur3_4f73r_4ll}",
+    }
+
+# If provided, the field can take one of two values: hidden, visible.
+state: hidden

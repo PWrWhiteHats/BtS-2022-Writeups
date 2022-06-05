@@ -1,0 +1,46 @@
+# Required sections
+name: "Scammerland"
+author: "Arqsz"
+category: web
+description: |
+    Someone've sent me this website, which is used by scammers for their frauds. I think I might somehow hack them this way... Can you confirm? Let's show those puppets who is the boss!  
+
+    ```
+    When scammer comes, I'ma steal his beat
+    Take a long night hacking their own thing
+    Be fighting them all night with all my friends
+    Sitting on the shores of scammerland, oh
+    ```
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 50
+    minimum: 100
+
+
+image: null
+host: null
+
+connection_info: http://localhost
+
+
+flags:
+    - {
+        type: "static",
+        content: "BtSCTF{N0_M0R3_5C4Mm3r2_0Nly_puPp372_n0W}",
+    }
+
+
+hints:
+    - {
+        content: "I cannot access list of their cards via my browser...but maybe they can get it through theirs?",
+        cost: 5
+    }
+    - {
+        content: "I don't think the name is validated. I am curious what can be passed in this parameter",
+        cost: 10
+    }
+
+# If provided, the field can take one of two values: hidden, visible.
+state: hidden

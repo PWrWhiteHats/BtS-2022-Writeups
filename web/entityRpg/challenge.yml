@@ -1,0 +1,28 @@
+# Required sections
+name: "entityRpg"
+author: "Raptiler"
+category: web
+description: The main goal is to defeat the boss for whom we will receive the flag. To do this, we will have to make a few bypassing tricks.
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 50
+    minimum: 100
+
+
+image: null
+host: null
+
+connection_info: http://localhost
+
+
+flags:
+    - {
+        type: "static",
+        content: "BtSCTF{3nT1ty_RpG_W1nn3r_Fl4g}",
+    }
+
+
+# If provided, the field can take one of two values: hidden, visible.
+state: hidden

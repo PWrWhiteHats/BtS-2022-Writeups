@@ -1,0 +1,11 @@
+# known-plaintext attack
+In [1]: from pwn import xor
+
+In [2]: btsctf = "BtSCTF{"
+
+In [3]: flag = bytes.fromhex("f0c6e1f1e6f4c982dc81edd0cb85d7edc286d6edc086c081decbedc582c0d9c1cf")
+
+In [4]: xor(flag,xor(flag[:len(btsctf)], btsctf ))
+/home/user/.local/lib/python3.10/site-packages/pwnlib/util/fiddling.py:325: BytesWarning: Text is not bytes; assuming ASCII, no guarantees. See https://docs.pwntools.com/#bytes
+strs = [packing.flat(s, word_size = 8, sign = False, endianness = 'little') for s in args]
+Out[4]: b'BtSCTF{0n3_by7e_p4d_r4r3ly_w0rks}'

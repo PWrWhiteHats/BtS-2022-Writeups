@@ -1,0 +1,30 @@
+# Required sections
+name: "oxidation"
+author: "Kuber19"
+category: re
+description: |
+    I can't crack the password to this app because my reverse engineering skills got rusty.  
+    Can you crack the passowrd?  
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 50
+    minimum: 100
+
+
+image: null
+host: null
+
+# connection_info: nc localhost 1234
+
+
+flags:
+    - {
+        type: "static",
+        content: "BtSCTF{1Iloverusty!}",
+    }
+
+
+# If provided, the field can take one of two values: hidden, visible.
+state: hidden

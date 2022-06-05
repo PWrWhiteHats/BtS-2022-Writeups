@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Entity RPG</title>
+  <link th:href="@{/css/bootstrap.css}" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/play">Play Arena</a></li>
+    <li><a class="active" href="/import">Import</a></li>
+    <li><a href="/export">Export</a>
+    </li>
+</ul>
+<center>
+<section class="my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <h2>Upload XML File</h2>
+                <form method="post" th:action="@{/upload}" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <input type="file" name="file" class="form-control-file">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Upload File</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+</center>
+</body>
+</html>

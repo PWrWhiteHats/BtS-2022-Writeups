@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Entity RPG</title>
+  <link th:href="@{/css/game.css}" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a class="active" href="/play">Play Arena</a></li>
+<li><a href="/import">Import</a></li>
+<li><a href="/export">Export</a>
+</li>
+</ul>
+<h1 th:if="${character.isBossKilled()}" class="colh1"><center>Congratulations! You have won challange</center></h1>
+<center><h2 th:if="${character.isBossKilled()}" class="coltxtflag" th:text="${flag}"><br></h2></center>
+<custom th:if="${character.isBossKilled()==false}">
+<p th:style="'color:#F8F8FF;display: flex;justify-content: center;align-items: center;text-align: center'" th:text="'Your character stats:'"></p>
+<p th:style="'color:#F8F8FF;display: flex;justify-content: center;align-items: center;text-align: center'" th:text="'Name: ' + ${character.getName()}"></p>
+<p th:style="'color:#F8F8FF;display: flex;justify-content: center;align-items: center;text-align: center'" th:text="'Attack: ' + ${character.getAttack()}"></p>
+<!--<p th:style="'color:#F8F8FF;display: flex;justify-content: center;align-items: center;text-align: center'" th:text="'Defense: ' + ${character.getDef()}"></p>-->
+<p th:style="'color:#F8F8FF;display: flex;justify-content: center;align-items: center;text-align: center'" th:text="'HP: ' +${character.getCurrHealth()}+'/'+${character.getHealth()}"></p>
+<img class="yourbox" th:if="${character.getHealth()} < 400" th:src="@{../images/charx1.png}" />
+<img class="yourbox" th:if="${character.getHealth()} >= 400" th:src="@{../images/chary1.png}" />
+
+<div class="regen-div">
+  <form th:if="${character.getCurrHealth()<character.getHealth() && !character.isInBattle()}" th:action="@{/play}" method="post">
+    <br><hr class="style-five"><br>
+    <input type="hidden" name="regenerate" value="1">
+    <input class="button-regen" type="submit" value="Regenerate HP!">
+  </form>
+</div>
+
+<form th:if="${character.isInBattle() == false}" th:action="@{/play}" method="post">
+  <br><hr class="style-five"><br>
+  <p class="text-monster">Dark Forest [Monsters: Ghosts/Wolfs - Atk: 2~5 - Health: 15~25]</p>
+  <input type="hidden" name="monsterid" value="1">
+  <input class="button-attack" type="submit" value="Attack!">
+</form>
+
+<form th:if="${character.isInBattle() == false}" th:action="@{/play}" method="post">
+  <br><hr class="style-five"><br>
+  <p class="text-monster">Ice Island [Monsters: Yeti/Polar bears - Atk: 20~51 - Health: 150~250]</p>
+  <input type="hidden" name="monsterid" value="2">
+  <input class="button-attack" type="submit" value="Attack!">
+</form>
+
+<form th:if="${character.isInBattle() == false}" th:action="@{/play}" method="post">
+  <br><hr class="style-five"><br>
+  <p class="text-monster">Dungeon [Monsters: Vampires/Necromancers - Atk: 390~591 - Health: 1305~2059]</p>
+  <input type="hidden" name="monsterid" value="3">
+  <input class="button-attack" type="submit" value="Attack!">
+</form>
+
+<form th:if="${character.isInBattle() == false}" th:action="@{/play}" method="post">
+  <br><hr class="style-five"><br>
+  <p class="text-monster">Rotten Earth [Monsters: Flag Boss - Atk: 9999999~9999999 - Health: 9999999~9999999]</p>
+  <input type="hidden" name="monsterid" value="4">
+  <input class="button-attack" type="submit" value="Attack!">
+  <br>
+</form>
+<p th:if="${character.isInBattle()} == true" th:style="'color:#F8F8FF;display: flex;justify-content: center;align-items: center;text-align: center'" th:text="'Your character is in battle till: ' + ${character.getTimestampToEndFight()}"></p>
+<hr th:if="${character.isInBattle() == false}" class="style-five"><br>
+<center><hr th:if="${character.isInBattle() == true}" class="style-six" style="width:40%;"><br></center>
+
+<p th:style="'color:#F8F8FF;display: flex;justify-content: center;align-items: center;text-align: center;'" name="info" id="info" value="siema"></p>
+<img class="centerimg" th:if="${character.isInBattle()} == true" th:src="@{../images/infight1.png}" />
+<script th:if="${character.isInBattle()} == true" th:inline="javascript" th:object="${character}">
+
+  setInterval(function () {
+    var t1 = new Date(/*[[${character.getTimestampToEndFight()}]]*/ 'default');
+    var dif =  Math.floor((t1.getTime() - new Date().getTime()) / 1000);
+    console.log(dif);
+    if(dif < 0)
+    {
+      console.log("Refreshing site");
+      document.getElementById("info").innerHTML = "";
+      location.assign("/play");
+    }
+    else
+    {
+      document.getElementById("info").innerHTML = "You have to wait " + dif.toString() +" seconds till end of fight.";
+    }
+    //document.write("You have to wait" + dif.toString() +" seconds till end of fight.");
+          }, 1000
+  );
+</script>
+
+<img class="centerimg" th:if="${character.isInRegen()} == true" th:src="@{../images/inregen1.png}" />
+<script th:if="${character.isInRegen()} == true" th:inline="javascript" th:object="${character}">
+
+  setInterval(function () {
+            var t1 = new Date(/*[[${character.getTimeStampToEndRegen()}]]*/ 'default');
+            console.log(t1);
+            var dif =  Math.floor((t1.getTime() - new Date().getTime()) / 1000);
+            console.log(dif);
+            if(dif < 0)
+            {
+              console.log("Refreshing site");
+              document.getElementById("info").innerHTML = "";
+              location.assign("/play");
+            }
+            else
+            {
+              document.getElementById("info").innerHTML = "You have to wait " + dif.toString() +" seconds till end of regen.";
+            }
+            //document.write("You have to wait" + dif.toString() +" seconds till end of fight.");
+          }, 1000
+  );
+</script>
+</custom>
+<p th:if="${character.getInfo()!=null && character.getInfo().length()>1}" th:text="${character.getInfo()}" class="text-monster"></p>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+{{!-- Original file from: https://codepen.io/simoberny/pen/XgEgGg --}}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Payment checkout</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row"></div>
+    <div class="row">
+      <div class="col">
+        <p class="alert alert-info mt-3" id="message_alert">Welcome to payment system</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col1">
+        <div class="card">
+          <div class="front">
+            <div class="type">
+              <img class="bankid" />
+            </div>
+            <span class="chip"></span>
+            <span class="card_number">&#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF;
+              &#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; </span>
+            <div class="date"><span class="date_value">MM / YYYY</span></div>
+            <span class="fullname">FULL NAME</span>
+          </div>
+          <div class="back">
+            <div class="magnetic"></div>
+            <div class="bar"></div>
+            <span class="seccode">&#x25CF;&#x25CF;&#x25CF;</span>
+            <span class="chip"></span><span class="disclaimer">This card is property of Totally Legit Bank.
+              <br> If found please return to Totally Legit Bank - 21 Nowhere Street 001010 Nowhereland </span>
+          </div>
+        </div>
+      </div>
+      <div class="col2">
+        <label>Card Number</label>
+        <input class="number" type="text" ng-model="ncard" maxlength="19"
+          onkeypress='return event.charCode >= 48 && event.charCode <= 57' />
+        <label>Cardholder name</label>
+        <input class="inputname" type="text" placeholder="" />
+        <label>Expiry date</label>
+        <input class="expire" type="text" placeholder="MM / YYYY" />
+        <label>Security Number</label>
+        <input class="cvv" type="text" placeholder="CVV" maxlength="3"
+          onkeypress='return event.charCode >= 48 && event.charCode <= 57' />
+        <button class="buy_button"><i class="material-icons">lock</i>Pay 100$</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/js/jquery-3.6.0.min.js"></script>
+  <script src="/static/js/jquery-ui.min.js"></script>
+  <script src="/static/js/angular.min.js"></script>
+  <script src="/static/js/index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+# Required sections
+name: "babyheap"
+author: "Jakub259"
+category: pwn
+description: Memory management would not be so difficult if we used STL containers or smart pointers.
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 50
+    minimum: 100
+
+
+image: null
+host: null
+
+connection_info: nc localhost 1234
+
+
+flags:
+    - {
+        type: "static",
+        content: "BtSCTF{H3aPP1Ty_H0pp1tY_Fl4G_I5_N0w_mY_Pr0P3r7Y}",
+    }
+
+
+# If provided, the field can take one of two values: hidden, visible.
+state: hidden

@@ -28,9 +28,9 @@ r.sendafter(b"(yes/no)\n",payload)
 ```
 ![stack](2.png)
 
-We do not know full address of flag(), but we can overwrite 12 least significant bits of return address  
-that are not affected by ASLR/PIE, guess next 4 bits that are affected and the remaining 48 most significant  
-bits of flag() address are the same as 48 most significant bits of return address.  
+We do not know full address of flag(), so we overwrite only 2 bytes, 12 bits of return address
+that are not affected by ASLR/PIE(always the same) and guess next 4 bits that are affected, the
+remaining bits are the same in both flag() address and return address.
 
 Chance of receiving the flag is 1/16 so we will have to try few times.
 

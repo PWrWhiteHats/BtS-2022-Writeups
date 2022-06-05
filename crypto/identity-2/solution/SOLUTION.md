@@ -4,7 +4,7 @@
 
 The same one as Identity because of wrong server side implementation and:
 
-Value `x` has the same value twice indicating reuse of nonce.
+Value `x` has the same value twice indicating reuse of ephemeral.
 
 ## Exploit
 r = random value chosen by client  

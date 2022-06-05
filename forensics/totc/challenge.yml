@@ -1,0 +1,34 @@
+# Required sections
+name: "TOTC"
+author: "Arqsz"
+category: forensics
+description: |
+    We managed to deliver a container image to our clients, so they could easily generate TOTP codes by themselves (security 4 the win). 
+    Unfortunately, one of them mentioned that their container is not working always as it should... We can't find the issue so maybe you can tell us, what is wrong with this?
+
+    **image**: `docker.io/whitehatspwr/bts-totc-challenge`
+    
+    **mirror**: `registry.gitlab.com/whitehatspwr/bts-totc-challenge`
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 50
+    minimum: 100
+
+
+image: null
+host: null
+
+# connection_info: http://localhost
+
+
+flags:
+    - {
+        type: "static",
+        content: "BtSCTF{0gRe5_4Re_L1Ke_c0N7a1NEr_1m4ge5_7Hey_h4vE_l4YER5}",
+    }
+
+
+# If provided, the field can take one of two values: hidden, visible.
+state: hidden

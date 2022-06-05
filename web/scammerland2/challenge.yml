@@ -1,0 +1,45 @@
+# Required sections
+name: "Scammerland 2"
+author: "Arqsz"
+category: web
+description: |
+    Those bloody scammers became much wiser and somehow blocked my attempts to hack them. Can you bypass it? 
+
+    ```
+    When scammer comes, I'ma steal his beat
+    Take a long night hacking their own thing
+    Be fighting them all night with all my friends
+    Sitting on the shores of scammerland, too
+    ```
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 50
+    minimum: 100
+
+
+image: null
+host: null
+
+connection_info: http://localhost
+
+
+flags:
+    - {
+        type: "static",
+        content: "BtSCTF{N07_3V3N_C5p_k4n_Pr073c7_u}",
+    }
+
+
+hints:
+    - {
+        content: "I wonder what's their policy regarding content...",
+        cost: 10
+    }
+
+requirements:
+    - "Scammerland"
+
+# If provided, the field can take one of two values: hidden, visible.
+state: hidden

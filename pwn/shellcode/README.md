@@ -1,5 +1,7 @@
 ## shellcode
 
+_Author: Jakub259
+
 What if... you couldn't use syscalls... unless..?
 
 ## Flag

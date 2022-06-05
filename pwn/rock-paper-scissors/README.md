@@ -1,5 +1,7 @@
 ## rock-paper-scissors
 
+_Author: Jakub259
+
 Let's play a game, if you win I will give you an awesome reward Ü
 
 ## Public files

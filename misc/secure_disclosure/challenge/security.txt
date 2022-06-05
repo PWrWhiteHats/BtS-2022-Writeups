@@ -1,0 +1,24 @@
+# Thank you for reaching us!
+# Vulnerability disclosure can be fully reported with valid encrypted message with our PGP public key
+
+
+Contact: mailto:kn.whitehats@pwr.edu.pl
+Expires: 2022-07-31T02:55:00.000Z
+Encryption: http://secure-disclosure.ch.wh.edu.pl/pgp_key.txt
+Preferred-Languages: en, pl
+Canonical: http://secure-disclosure.ch.wh.edu.pl/.well-known/security.txt
+
+# Consider this message before you send to us vulnerability reporting!
+
+-----BEGIN PGP MESSAGE-----
+
+hIwDXCken2NbzxcBBACpsgwfCoigxQNPjQTBjz1uCLKKyBb9CzLJPheeJpj5QKIp
+0hJxsO4i1RUnNx/g783/AiFm0sfg1BwmCIABkwmVa7vWiDKPukbox/AfVbQ8OsD7
+EsbWNOBWlIWppd6MG3LlVCzlNNzgNkcoTxLuICZEUhbtsfTKfBVdYB4x2cON/9J/
+AcZIIiIpSGWKlIFgSGNiauWAjMlMf5K3gOF5AE/6AkkakdOK66nw5x27qSjpBzE0
+OEx0Hm08duSg5lLWodvR3zk6RzhvfGP6Kgu5/dLxZWQcpWgolZOnRvj3Tacseu38
+wJYHBt+6aLhGv4jY+uijYw2FXG4ZiFiR5ijL0jYTFw==
+=uRnW
+-----END PGP MESSAGE-----
+
+T29vcHNpZSEKT3VyIHByaXZhdGUgUEdQIGtleTogaHR0cDovL3NlY3VyZS1kaXNjbG9zdXJlLmNoLndoLmVkdS5wbC9wZ3BfcHJpdl9rZXkudHh0ClBhc3Njb2RlOiBzZWN1cml0eS50eHQu

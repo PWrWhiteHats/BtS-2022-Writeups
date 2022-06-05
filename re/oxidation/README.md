@@ -1,5 +1,7 @@
 ## oxidation
 
+_Author: Jakub259
+
 I can't crack the password to this app because my reverse engineering skills got rusty.  
 Can you crack the passowrd?  
   

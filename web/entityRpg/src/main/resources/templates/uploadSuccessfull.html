@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Entity RPG</title>
+  <link th:href="@{/css/game.css}" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<!--<div class="menu-delete">-->
+<h1 class="colh1"><center>XML File Uploaded!</center></h1>
+<h2 class="coltxt"><center>Parsing data please wait!.</center></h2>
+<script>
+  setInterval(function () {
+              console.log("Go to play");
+              location.assign("/play");
+            }, 3000
+  );
+</script>
+<br>
+</body>
+</html>

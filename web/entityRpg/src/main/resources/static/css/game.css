@@ -1,0 +1,279 @@
+body {
+    margin: 0px;
+    padding: 100px;
+    background: #414141;
+}
+
+.content, div{
+    display:inline-block;
+}
+
+.menu{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    position: center;
+    border: 3px solid #4F4F4F;
+    border-radius: 3px;
+    color: lightblue;
+    text-align-last: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-delete{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    position: center;
+    color: lightblue;
+    text-align-last: center;
+    align-items: center;
+    justify-content: center;
+    top: 80%;
+}
+
+.button-create {
+    position:absolute;
+    bottom:40%;
+    left: 40%;
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    opacity: 0.9;
+    border-radius: 3px;
+}
+
+.text-monster
+{
+    left: 5%;
+    color: #F8F8FF;
+}
+
+.regen-div {
+    position: fixed;
+    right: 88%;
+    top: 12%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 88%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+.centerimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.yourbox {
+    position: fixed;
+    left: 70%;
+    top: 10%;
+}
+
+hr.style-five {
+    border: 0;
+    height: 0; /* Firefox... */
+    box-shadow: 0 0 10px 1px black;
+    width:65%;
+    float:left;
+}
+hr.style-five:after {  /* Not really supposed to work, but does */
+    content: "\00a0";  /* Prevent margin collapse */
+}
+
+hr.style-six {
+    border: 0;
+    height: 0; /* Firefox... */
+    box-shadow: 0 0 10px 1px black;
+    margin-left:30% !important;
+    margin-right:30% !important;
+    width:65%;
+    float:left;
+}
+hr.style-six:after {  /* Not really supposed to work, but does */
+    content: "\00a0";  /* Prevent margin collapse */
+}
+
+.button-attack {
+    right: 5%;
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    height: 3%;
+    opacity: 0.9;
+    border-radius: 3px;
+}
+
+.button-regen {
+    background-color: #02AF6D;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 80%%;
+    opacity: 0.9;
+    border-radius: 3px;
+}
+
+.text-monster1
+{
+    left: 5%;
+    color: #F8F8FF;
+}
+
+.button-attack1 {
+    right: 5%;
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    opacity: 0.9;
+    border-radius: 3px;
+}
+
+.text-monster2
+{
+    left: 5%;
+    color: #F8F8FF;
+}
+
+.button-attack2 {
+    right: 5%;
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    opacity: 0.9;
+    border-radius: 3px;
+}
+
+.text-monster3
+{
+    left: 5%;
+    color: #F8F8FF;
+}
+
+.button-attack3 {
+    right: 5%;
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    opacity: 0.9;
+    border-radius: 3px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.line {
+    border-top: 1px solid grey;
+    flex-grow: 1;
+    margin: 0 10px;
+}
+
+.button-input {
+    position:absolute;
+    bottom:5%;
+    left: 50%;
+    background-color: #04AA9D;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    opacity: 0.9;
+    border-radius: 3px;
+}
+
+.logo {
+    width: 500px;
+    height: 500px;
+    display: block;
+    text-indent: -9999px;
+}
+
+.colh1 {
+    font-size: 72px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.coltxt {
+    font-size: 32px;
+    background: -webkit-linear-gradient(#eee, #023);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.coltxtflag {
+    font-size: 32px;
+    background: -webkit-linear-gradient(#eee, #023);
+    align-items: center;
+    justify-content: center;;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.coltxt2 {
+    position: absolute;
+    bottom: 55%;
+    left: 40%;
+    font-size: 32px;
+    background: -webkit-linear-gradient(#eee, #023);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form-textfield{
+    position:absolute;
+    bottom:50%;
+    left: 40%;
+    width: 19%;
+    height: 3%;
+    background-color: #ededed;
+    opacity: 0.9;
+    transition: 0.5s;
+}
+.form-textfield:focus{transition: 0.5s; opacity: 1;}
+

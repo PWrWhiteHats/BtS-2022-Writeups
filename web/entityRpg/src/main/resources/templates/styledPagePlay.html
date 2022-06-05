@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Entity RPG</title>
+  <link th:href="@{/css/style.css}" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <form th:action="@{/create}" method="get">
+      <br>
+      <input class="button-add" type="submit" value="Create New Account">
+    </form>
+    <form method="get" th:action="@{/load}">
+      <br>
+      <input class="button-load" type="submit" value="Load Existing Account">
+    </form>
+    <form method="get" th:action="@{/play}">
+        <br>
+        <input class="button-play" type="submit" value="PLAY">
+    </form>
+<br>
+</body>
+</html>

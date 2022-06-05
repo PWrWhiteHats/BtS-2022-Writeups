@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Entity RPG</title>
+  <link th:href="@{/css/game.css}" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<!--<div class="menu-delete">-->
+<h2 class="coltxt2">Please enter Your name!</h2>
+<form th:action="@{/createchar}" th:object="${character}" method="post">
+    <input th:field="*{name}" name="name" id="name" class="form-textfield" type="text">
+    <input class="button-create" type="submit" value="Create!">
+</form>
+<!--</div>-->
+<br>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<entityRPG>
+<account id="1001">
+<name>HEHEHEH</name>
+<health>999999999</health>
+<currHealth>999999999</currHealth>
+<attack>999999999</attack>
+<characterHash>bAQvlCtWU3b/Q6QIdiEKBypdVowfsLMHnlODHDNYh1o=</characterHash>
+<!--Due to safety reasons the XML data is checked by decrypting text in format attack:health:currentHealth which is signed AES with password stored in /app/home/password.txt-->
+</account>
+</entityRPG>

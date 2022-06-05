@@ -1,5 +1,7 @@
 # Time-based one-time container
 
+_Author: TheArqsz
+
 ## Description
 
 We managed to deliver a container image to our clients, so they could easily generate TOTP codes by themselves (security 4 the win). Unfortunately, one of them mentioned that their container is not working always as it should... We can't find the issue so maybe you can tell us, what is wrong with this?

@@ -1,0 +1,22 @@
+{
+	"name": "ctf_challenge",
+	"version": "1.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js"
+	},
+	"keywords": [],
+	"authors": [
+		"Arqsz"
+	],
+	"dependencies": {
+		"express": "latest",
+		"sqlite-async": "latest",
+		"puppeteer": "latest",
+		"hbs": "latest"
+	},
+	"devDependencies": {
+		"nodemon": "latest"
+	}
+}

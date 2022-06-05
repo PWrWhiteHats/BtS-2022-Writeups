@@ -1,0 +1,28 @@
+# Required sections
+name: "xoxoxo"
+author: "xxzxcuzx_me"
+category: crypto
+description: I got this from a friend that said it's impossible to break his cipher. Will you help me prove him wrong?
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 50
+    minimum: 100
+
+
+image: null
+host: null
+
+# connection_info: nc hostname 12345
+
+
+flags:
+    - {
+        type: "static",
+        content: "BtSCTF{0n3_by7e_p4d_r4r3ly_w0rks}",
+    }
+
+
+# If provided, the field can take one of two values: hidden, visible.
+state: hidden

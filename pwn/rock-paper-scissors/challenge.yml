@@ -1,0 +1,28 @@
+# Required sections
+name: "rock-paper-scissors"
+author: "Jakub259"
+category: pwn
+description: Let's play a game, if you win I will give you an awesome reward Ü
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 50
+    minimum: 100
+
+
+image: null
+host: null
+
+connection_info: nc localhost 1234
+
+
+flags:
+    - {
+        type: "static",
+        content: "BtSCTF{R0cK_P4p3R_Sc1S50r5_L1z4Rd_Sp0Ck}",
+    }
+
+
+# If provided, the field can take one of two values: hidden, visible.
+state: hidden

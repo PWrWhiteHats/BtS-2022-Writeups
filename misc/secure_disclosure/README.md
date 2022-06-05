@@ -15,11 +15,8 @@ Check in [flag.txt](flag.txt) file
 
 To set up this challenge we need to:
 
-1. Add a ```security.txt``` file on WH website to a URL ```whitehats.pwr.edu.pl/.well-known/security.txt```
-
-2. Add a ```pgp_key.txt``` file on WH website to a URL ```whitehats.pwr.edu.pl/pgp_key.txt```
-
-3. Add a ```pgp_priv_key.txt``` file on WH website to a URL ```whitehats.pwr.edu.pl/pgp_priv_key.txt```
+1. Run ```start-container.sh```
+2. Connect on ```localhost```
 
 ## Solution
 

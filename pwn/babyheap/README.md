@@ -1,5 +1,7 @@
 # babyheap
 
+_Author: Jakub259
+
 Memory management would not be so difficult if we used STL containers or smart pointers.
 
 ## Flag
